@@ -1,2 +1,5 @@
 *.swp
+site/*
+node_modules/*
+twsrc.o
 
