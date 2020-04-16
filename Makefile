@@ -2,7 +2,7 @@ all: site/index.html site/style.css
 
 dep:
 	apt update
-	apt install nodejs
+	apt install npm
 	npm install tailwindcss
 	npm install npx
 	npm install cssnano --save-dev
