@@ -22,8 +22,15 @@
 .link-gray:hover {@apply text-gray-700;}
 */
 
-@tailwind utilities;
+w-intro {@apply w-full;}
+@screen md {
+    .w-widget-med {width: 47%;}
+    .w-intro {width: 50rem;}
+}
+@screen lg {
+    .w-widget-med {width: 31%;}
+}
 
-.main-w {max-width: 50rem;}
+@tailwind utilities;
 
 

@@ -22,7 +22,7 @@ delconf:
 
 site/style.css: twsrc.css
 	mkdir -p site
-	npx tailwind build twsrc.css -o twsrc.o
+	npx tailwind build twsrc.css -o twsrc.o 1>/dev/null
 	npx postcss twsrc.o > site/style.css
 
 site/index.html: index.html

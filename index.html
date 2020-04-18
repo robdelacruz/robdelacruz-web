@@ -6,26 +6,78 @@
 <title>Website</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body class="p-4">
-<section class="p-4 mx-auto bg-gray-100 text-gray-800 main-w">
-    <h1 class="text-bold text-lg mb-8">Rob's Website</h1>
-    <p class="mb-4">Welcome to my placeholder website. Please check out my projects.</p>
-    <p>
-        <a class="text-base text-bold text-green-800 underline" href="http://fortune2.robdelacruz.com">Fortune2</a>
-        - Print a random fortune or quote. Web-based clone of Unix Fortune.
-    </p>
-    <p>
-        <a class="text-base text-bold text-green-800 underline" href="http://multinote.robdelacruz.com">MultiNote</a>
-        - Submit notes and discuss with other users. Inspired by PLATO Notes.
-    </p>
-    <p>
-        <a class="text-base text-bold text-green-800 underline" href="http://newsboard.robdelacruz.com">Newsboard</a>
-        - Share and comment on news links. A clone of HackerNews.
-    </p>
-    <p class="text-xs mt-4">
-    Email me: <span class="italic">robdelacruz@protonmail.com</span>
-    </p>
-    <p class="mt-8 text-xs text-gray-500 text-center">Under Construction (obviously!)</p>
+<body class="font-sans text-gray-800">
+<header class="flex flex-row bg-gray-700 text-gray-200 p-2">
+    <div class="self-center mr-4">
+        <h1 class="text-xl text-bold"><a href="#">RDLC Computing</a></h1>
+    </div>
+<!--
+    <div class="flex-grow self-center">
+        <a class="text-gray-400 mr-2">Notes</a>
+        <a class="text-gray-400 mr-2">Projects</a>
+        <a class="bg-gray-200 text-gray-800 py-1 px-2 mr-2">Latest</a>
+    </div>
+    <div class="text-sm self-center ml-4 text-right">
+        <a class="mr-2" href="#">Contact</a>
+        <a class="" href="#">About</a>
+    </div>
+-->
+</header>
+<section class="flex flex-row mt-4 justify-center mx-4 mb-8">
+    <article class="p-2 w-intro">
+        <p class="mb-2">
+        I am an independent software developer doing mostly web development in Go, SQL (sqlite3) and vanilla JS. My full list of projects are in my <a class="underline text-gray-700" href="https://github.com/robdelacruz">github</a> profile.
+        </p>
+        <p class="mb-2">Email me at <span class="text-gray-700 italic">robdelacruz@protonmail.com</span></p>
+        <p class="mb-4">Below are my most recent projects.</p>
+    </article>
+</section>
+
+<section class="flex flex-row flex-wrap justify-start mx-4">
+    <article class="w-widget-med px-4 py-2 border-2 rounded-lg mb-4 mx-2">
+        <h2 class="text-center text-lg font-bold mb-2">MultiNote</h2>
+        <p class="mb-2">MultiNote is a multi-user web based note sharing system. Inspired by PLATO Notes.</p>
+        <ul class="list-disc list-inside mb-2">
+            <li>Add and edit notes.</li>
+            <li>Upload files, images.</li>
+            <li>Reply to notes.</li>
+            <li>Multiple users.</li>
+            <li>Use to keep track of records, as a weblog, or CMS.</li>
+            <li>MIT License</li>
+        </ul>
+        <p class="">
+            <a class="font-bold text-gray-700 text-sm underline mr-1" href="http://multinote.robdelacruz.com">demo</a>
+            <a class="text-gray-700 text-sm underline" href="http://github.com/robdelacruz/multinote">github</a>
+        </p>
+    </article>
+    <article class="w-widget-med px-4 py-2 border-2 rounded-lg mb-4 mx-2">
+        <h2 class="text-center text-lg font-bold mb-2">Newsboard</h2>
+        <p class="mb-2">Newsboard is a bulletin board for posting stories and links. Inspired by HackerNews.</p>
+        <ul class="list-disc list-inside mb-2">
+            <li>Submit stories and links.</li>
+            <li>Reply to stories.</li>
+            <li>Multiple users.</li>
+            <li>MIT License</li>
+        </ul>
+        <p class="">
+            <a class="font-bold text-gray-700 text-sm underline mr-1" href="http://newsboard.robdelacruz.com">demo</a>
+            <a class="text-gray-700 text-sm underline" href="http://github.com/robdelacruz/newsboard">github</a>
+        </p>
+    </article>
+    <article class="w-widget-med px-4 py-2 border-2 rounded-lg mb-4 mx-2">
+        <h2 class="text-center text-lg font-bold mb-2">Fortune2</h2>
+        <p class="mb-2">Print a random fortune or quote. Clone of Unix Fortune.</p>
+        <ul class="list-disc list-inside mb-2">
+            <li>Add, delete, search fortunes</li>
+            <li>Compatible with Unix fortune cookie files)</li>
+            <li>Command line utility with similar interface to Unix Fortune</li>
+            <li>Web Service backend functionality</li>
+        </ul>
+        <p class="">
+            <a class="font-bold text-gray-700 text-sm underline mr-1" href="http://fortune2.robdelacruz.com">demo</a>
+            <a class="text-gray-700 text-sm underline" href="http://github.com/robdelacruz/fortune2">github</a>
+        </p>
+    </article>
 </section>
 </body>
 </html>
