@@ -22,13 +22,14 @@
 .link-gray:hover {@apply text-gray-700;}
 */
 
-w-intro {@apply w-full;}
+.w-intro {@apply w-full;}
+.w-widget-med {@apply w-full;}
 @screen md {
-    .w-widget-med {width: 47%;}
+    .w-widget-med {width: 31%;}
     .w-intro {width: 50rem;}
 }
 @screen lg {
-    .w-widget-med {width: 31%;}
+    .w-widget-med {width: 19%;}
 }
 
 @tailwind utilities;

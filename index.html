@@ -6,7 +6,7 @@
 <title>RDLC Computing</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body class="font-sans text-gray-800">
+<body class="font-sans text-gray-800 text-sm">
 <header class="flex flex-row bg-gray-700 text-gray-200 p-2">
     <div class="self-center mr-4">
         <h1 class="text-xl text-bold"><a href="#">RDLC Computing</a></h1>
@@ -23,61 +23,96 @@
     </div>
 -->
 </header>
-<section class="flex flex-row mt-4 justify-center mx-4 mb-8">
-    <article class="p-2 w-intro">
-        <p class="mb-2">
-        I am an independent software developer doing mostly web development in Go, SQL (sqlite3) and vanilla JS. My full list of projects are in my <a class="underline text-gray-700" href="https://github.com/robdelacruz">github</a> profile.
-        </p>
-        <p class="mb-2">Email me at <span class="text-gray-700 italic">robdelacruz@protonmail.com</span></p>
-        <p class="mb-4">Below are my most recent projects.</p>
-    </article>
-</section>
+<article class="py-4 px-8 w-intro">
+    <p class="mb-2">
+    I am an independent software developer doing mostly <strong>web development</strong> and desktop software.
+    </p>
+    <p class="mb-2">
+    At present, I code mostly in <strong>Go</strong>, <strong>Sqlite3</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. All of my projects are open source and freely available in my <a class="underline text-gray-700" href="https://github.com/robdelacruz">github</a> profile.
+    </p>
+    <p class="mb-2">
+    If you need help installing or using any of my programs, you can email me at <em class="">robdelacruz@protonmail.com</em> or <em class=""><a class="underline" href="https://twitter.com/robdelacruz">send me a tweet</a></em>.
+    </p>
+</article>
 
-<section class="flex flex-row flex-wrap justify-start mx-4">
-    <article class="w-widget-med px-4 py-2 border-2 rounded-lg mb-4 mx-2">
-        <h2 class="text-center text-lg font-bold mb-2">MultiNote</h2>
-        <p class="mb-2">MultiNote is a multi-user web based note sharing system. Inspired by PLATO Notes.</p>
-        <ul class="list-disc list-inside mb-2">
-            <li>Add and edit notes.</li>
-            <li>Upload files, images.</li>
-            <li>Reply to notes.</li>
-            <li>Multiple users.</li>
-            <li>Use to keep track of records, as a weblog, or CMS.</li>
-            <li>MIT License</li>
-        </ul>
-        <p class="">
-            <a class="font-bold text-gray-700 text-sm underline mr-1" href="http://multinote.robdelacruz.com">demo</a>
-            <a class="text-gray-700 text-sm underline" href="http://github.com/robdelacruz/multinote">github</a>
-        </p>
-    </article>
-    <article class="w-widget-med px-4 py-2 border-2 rounded-lg mb-4 mx-2">
-        <h2 class="text-center text-lg font-bold mb-2">Newsboard</h2>
-        <p class="mb-2">Newsboard is a bulletin board for posting stories and links. Inspired by HackerNews.</p>
-        <ul class="list-disc list-inside mb-2">
-            <li>Submit stories and links.</li>
-            <li>Reply to stories.</li>
-            <li>Multiple users.</li>
-            <li>MIT License</li>
-        </ul>
-        <p class="">
-            <a class="font-bold text-gray-700 text-sm underline mr-1" href="http://newsboard.robdelacruz.com">demo</a>
-            <a class="text-gray-700 text-sm underline" href="http://github.com/robdelacruz/newsboard">github</a>
-        </p>
-    </article>
-    <article class="w-widget-med px-4 py-2 border-2 rounded-lg mb-4 mx-2">
-        <h2 class="text-center text-lg font-bold mb-2">Fortune2</h2>
-        <p class="mb-2">Print a random fortune or quote. Clone of Unix Fortune.</p>
-        <ul class="list-disc list-inside mb-2">
-            <li>Add, delete, search fortunes</li>
-            <li>Compatible with Unix fortune cookie files)</li>
-            <li>Command line utility with similar interface to Unix Fortune</li>
-            <li>Web Service backend functionality</li>
-        </ul>
-        <p class="">
-            <a class="font-bold text-gray-700 text-sm underline mr-1" href="http://fortune2.robdelacruz.com">demo</a>
-            <a class="text-gray-700 text-sm underline" href="http://github.com/robdelacruz/fortune2">github</a>
-        </p>
-    </article>
+<section class="flex flex-wrap justify-start py-4 px-8">
+    <!-- col 1 -->
+    <section class="w-widget-med pr-4">
+        <!-- Projects -->
+        <section class="pb-8">
+            <h2 class="border-b font-bold mb-2">Projects</h2>
+            <ul class="list-none list-inside">
+                <li class="mb-2">
+                    <p>
+                        <a class="" href="https://github.com/robdelacruz/multinote">MultiNote</a>
+                        <a class="text-xs italic underline" href="http://multinote.robdelacruz.com">demo</a>
+                    </p>
+                    <p class="text-gray-600 text-xs">
+                    Multi-user web based note sharing system. For weblogs, CMS, file repository.
+                    </p>
+                </li>
+                <li class="mb-2">
+                    <p>
+                        <a class="" href="https://github.com/robdelacruz/newsboard">Newsboard</a>
+                        <a class="text-xs italic underline" href="http://newsboard.robdelacruz.com">demo</a>
+                    </p>
+                    <p class="text-gray-600 text-xs">
+                    Bulletin board for posting stories and links. <em>HackerNews</em> clone.
+                    </p>
+                </li>
+                <li class="mb-2">
+                    <p>
+                        <a class="" href="https://github.com/robdelacruz/fortune2">Fortune2</a>
+                        <a class="text-xs italic underline" href="http://fortune2.robdelacruz.com">demo</a>
+                    </p>
+                    <p class="text-gray-600 text-xs">
+                    Unix <em>fortune</em> clone. Compatible with unix fortune files. Command-line program. Includes webservice for retrieving fortunes online.
+                    </p>
+                </li>
+                <li class="mb-2">
+                    <p>
+                        <a class="" href="https://github.com/robdelacruz/modeless">Modeless</a>
+                        <a class="text-xs italic underline" href="https://robdelacruz.github.io/modeless/">demo</a>
+                    </p>
+                    <p class="text-gray-600 text-xs">
+                    Search, view, add, edit notes in a modeless UI interface. Web based <em><a class="underline" href="http://notational.net/">Notational Velocity</a></em> clone.
+                    </p>
+                </li>
+                <li class="mb-2">
+                    <p>
+                        <a class="" href="https://github.com/robdelacruz/ted">Ted</a>
+                    </p>
+                    <p class="text-gray-600 text-xs">
+                    Console-based text editor developed in <em>Go</em> and <em>termbox</em>.
+                    </p>
+                </li>
+                <li class="mb-2">
+                    <p>
+                        <a class="" href="https://github.com/robdelacruz/exp">Expense Buddy</a>
+                    </p>
+                    <p class="text-gray-600 text-xs">
+                    Command-line expense tracker utility for unix environments.
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <!-- col 2 -->
+    <section class="w-widget-med pr-4">
+    <!-- Notes -->
+        <section class="pb-8">
+            <h2 class="border-b font-bold mb-2">Notes</h2>
+            <ul class="list-none list-inside">
+                <li class="mb-2">
+                    <p class="text-gray-600 text-xs">
+                    Coming soon
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </section>
+
 </section>
 </body>
 </html>
