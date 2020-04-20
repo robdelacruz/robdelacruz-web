@@ -1,0 +1,36 @@
+@tailwind base;
+
+@tailwind components;
+
+/*
+.field {
+    @apply border py-2 px-3 text-gray-700;
+}
+.label {
+    @apply mb-2 uppercase font-bold text-lg text-gray-700;
+}
+.control {
+    @apply flex flex-col;
+}
+
+.btn {@apply block text-white uppercase text-lg mx-auto p-4 rounded;}
+.btn-teal {@apply bg-teal-500;}
+.btn-teal:hover {@apply bg-teal-700;}
+
+.link {@apply block no-underline text-sm;}
+.link-gray {@apply text-gray-500;}
+.link-gray:hover {@apply text-gray-700;}
+*/
+
+w-intro {@apply w-full;}
+@screen md {
+    .w-widget-med {width: 47%;}
+    .w-intro {width: 50rem;}
+}
+@screen lg {
+    .w-widget-med {width: 31%;}
+}
+
+@tailwind utilities;
+
+
