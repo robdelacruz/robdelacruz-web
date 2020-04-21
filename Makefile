@@ -1,5 +1,10 @@
 all: site/index.html site/style.css
 
+ppa:
+	apt-get install curl python-software-properties
+	curl -sL https://deb.nodesource.com/setup_13.x | sudo bash -
+	sudo apt install nodejs
+
 dep:
 	apt update
 	apt install npm
