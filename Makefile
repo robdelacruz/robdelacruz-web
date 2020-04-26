@@ -1,24 +1,28 @@
 all: site/index.html site/style.css
 
 dep:
-	apt update
-	apt install npm
+	sudo apt update
+	sudo apt install curl software-properties-common
+	curl -sL https://deb.nodesource.com/setup_13.x | sudo bash -
+	sudo apt install nodejs
+	sudo npm install -g npx
+
+webtools:
 	npm install tailwindcss
-	npm install npx
-	npm install cssnano --save-dev
 	npm install postcss-cli
+	npm install cssnano --save-dev
 
 addconf:
-	cp robdelacruz.com.conf /etc/nginx/sites-available/
-	cp reverse-proxy.conf /etc/nginx/sites-available/
-	ln -sf /etc/nginx/sites-available/robdelacruz.com.conf /etc/nginx/sites-enabled/robdelacruz.com.conf
-	ln -sf /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/reverse-proxy.conf
-	service nginx restart
+	sudo cp robdelacruz.com.conf /etc/nginx/sites-available/
+	sudo cp reverse-proxy.conf /etc/nginx/sites-available/
+	sudo ln -sf /etc/nginx/sites-available/robdelacruz.com.conf /etc/nginx/sites-enabled/robdelacruz.com.conf
+	sudo ln -sf /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/reverse-proxy.conf
+	sudo service nginx restart
 
 delconf:
-	unlink /etc/nginx/sites-enabled/robdelacruz.com.conf
-	unlink /etc/nginx/sites-enabled/reverse-proxy.conf
-	rm -f /etc/nginx/sites-available/robdelacruz.com.conf /etc/nginx/sites-available/reverse-proxy.conf
+	sudo unlink /etc/nginx/sites-enabled/robdelacruz.com.conf
+	sudo unlink /etc/nginx/sites-enabled/reverse-proxy.conf
+	sudo rm -f /etc/nginx/sites-available/robdelacruz.com.conf /etc/nginx/sites-available/reverse-proxy.conf
 
 site/style.css: twsrc.css
 	mkdir -p site

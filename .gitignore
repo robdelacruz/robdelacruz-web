@@ -1,5 +1,6 @@
 *.swp
+*.o
 site/*
 node_modules/*
-twsrc.o
+package-lock.json
 
