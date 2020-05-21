@@ -1,6 +1,2 @@
 *.swp
-*.o
-site/*
-node_modules/*
-package-lock.json
 
