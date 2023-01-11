@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>robdelacruz-xyz</title>
+<style>
+html {
+    font: 12px Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Courier, monospace;
+    line-height: 16px;
+    background-color: rgb(30, 30, 30);
+    color: rgb(220, 220, 220);
+}
+body {
+    padding: 25px 100px;
+    width: 80ch;
+    margin: auto;
+}
+a {
+    1color: #f1fa8c;
+    1color: #50fa7b; /* green */
+    color: darkgreen;
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<pre>
+#include &lt;stdio.h&gt;
+#include &lt;sys/types.h&gt;
+#include &lt;sys/socket.h&gt;
+#include &lt;netinet/in.h&gt;
+#include &lt;arpa/inet.h&gt;
+
+int main(int argc, char *argv[]) {
+    int sd;
+    if ((sd = socket(AF_INET, SOCK_STREAM, 0)) &lt; 0) {
+        perror("socket() failed");
+        return 1;
+    }
+    return 0;
+}
+
+</pre>
+</body>
+</html>
